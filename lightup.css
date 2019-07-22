@@ -1,0 +1,281 @@
+ @keyframes fadein {
+                from { opacity:0; }
+                to   { opacity:1; }
+            }
+            
+            @-moz-keyframes fadein {
+                from { opacity:0; }
+                to   { opacity:1; }
+            }
+            
+            @-webkit-keyframes fadein {
+                from { opacity:0; }
+                to   { opacity:1; }
+            }
+            
+            @-ms-keyframes fadein {
+                from { opacity:0; }
+                to   { opacity:1; }
+            }
+            
+            @-o-keyframes fadein {
+                from { opacity:0; }
+                to   { opacity:1; }
+            }  
+            
+            ::selection {
+                
+                color: white;
+                background: {color:Accent};
+            }
+
+            @font-face {
+                
+                font-family: "bbibbi";
+                src: url("https://dl.dropbox.com/s/ep4rsjgw94hm5py/UhBee%20Rice.ttf");
+                unicode-range: U+3130-318F;
+            }
+            
+            
+            * {
+                
+                text-decoration: none;
+                list-style: none;
+                -webkit-animation: fadein 1.5s;
+                -moz-animation: fadein 1.5s;
+                -o-animation: fadein 1.5s; 
+                animation: fadein 1.5s;
+                transition-duration: .6s;
+                transition: .3s ease;
+            }
+            
+            article {
+                
+                width: 450px;
+                margin-bottom: 80px;
+                padding: 15px 20px;
+                border: 2px solid black;
+            }
+            
+            article:hover {
+                
+                margin-top: 40px;
+            }
+
+            b {
+                
+                font-weight: 600;
+                color: RGB({RGBcolor:bold});
+            }
+            
+            body {
+                
+                font: 15px marvel, sans-serif;
+
+            }
+            
+            blockquote {
+                
+                margin-left: 0px;
+                padding-left: 4px;
+            }
+            
+            .commenter {
+                
+                margin-top: 10px;
+            }
+            
+            .commenter img {
+                
+                width: 34px;
+                border-radius: 100%;
+                border: 2px solid {color:Accent};
+            }
+            
+            .commenter span {
+                
+                position: absolute;
+                margin: 12px;
+                text-transform: uppercase;
+                font-size: larger;
+                font-style: italic;
+            }
+            
+            .comment img {
+                
+                width: 100%;
+                height: auto;
+            }  
+            
+            .comment *:first-child {
+                
+                margin-top: 10px;
+            }  
+            
+            .info {
+                
+                border-top: 2px solid black;
+                margin-top: 15px;
+            }
+            
+            p:lang(ko) {
+                
+                font-family: bbibbi;
+            }
+            
+            main {
+                
+                margin-left: 40%;
+            }
+            
+            section {
+                
+                margin-top: 10%;
+                
+            }
+            
+            .tmblr-attribution {
+                
+                background-color: hsla(0, 0%, 98%, 0.98);
+                color: gray;
+                margin-top: -2px;
+                padding: 10px;
+            }
+            
+            .tmblr-attribution a:after {
+                
+                font: 10px "honeybee";
+                content: "\ebc6";
+                margin-left: 10px;
+            }
+            
+            .q span {
+                
+                position: absolute;
+                color: white;
+                background: #c4ecfb;
+                padding: 15px 20px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                margin-left: 6px;
+                margin-top: -28px;
+            }
+            
+            .q span p:last-of-type {
+                
+                border-bottom-right-radius: 0px;
+            }
+            
+            .q img {
+                
+                border-radius: 100%;
+            }
+            
+            .n {
+                
+                position: inherit;
+            }
+            
+            .a {
+                
+                margin-left: 66px;
+            }
+            
+            .a span p:last-of-type {
+                
+                border-bottom-right-radius: 0px;
+            }
+            
+            .a span p {
+                
+                padding: 15px 20px;
+                background: #f2f2f2;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                width: 300px;
+            }
+
+            .a img {
+                
+                position: absolute;
+                margin-top: -35px;
+                margin-left: 346px;
+            }
+
+            
+            .post_tags, .post_tags a { color: rgba(128,128,128,.7); }
+
+            .post_tags {
+                
+              position: relative;
+              margin-top: 10px;
+              line-height: 20px;
+              white-space: nowrap;
+              overflow: hidden;
+              width: 240px;
+            }
+            
+            .post_tags.draggable .post_tags_inner {
+              cursor: col-resize;
+              
+              -webkit-touch-callout: none;
+              -webkit-user-select: none;
+              -khtml-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+            
+            .post_tags_inner {
+              float: left;
+              position: relative;
+              padding: 0px 2px 0px 0;
+            }
+            
+            .post_tags a,
+            .post_tags .post_tag {
+              color: rgba(128,128,128,.7);
+              font-size: 15px;
+              text-decoration: none;
+              margin-right: 6px;
+              text-transform: lowercase !important;
+            }
+            
+            .post_tags a:before { content: '#'; }
+            
+            .post_tags:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              width: 20px;
+              background: -moz-linear-gradient(left, rgba(255,255,255,0) 0, rgba(255,255,255,1) 100%);
+              background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #FFF));
+              background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, #FFF 100%);
+              background: -o-linear-gradient(left, rgba(255,255,255,0) 0, rgba(255,255,255,1) 100%);
+              background: -ms-linear-gradient(left, rgba(255,255,255,0) 0, rgba(255,255,255,1) 100%);
+              background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #FFF 100%);
+            }
+            
+            .post_tags a:hover,
+            .post_tags .post_tag:hover,
+            .post_tags a:focus,
+            .post_tags .post_tag:focus,
+            .post_tags a:active,
+            .post_tags .post_tag:active { color: {color:Accent}; }
+            
+            #vignette {visibility:hidden;}
+            #tumblr_lightbox {background-color:transparent!important;cursor:help;}
+            #tumblr_lightbox img {box-shadow:none!important;border-radius:0!important;padding:4px;background-color:#fff!important;}
+            #tumblr_lightbox a img {border:0px solid #fff!important;}
+            .image {background-color:{color:accent};}
+            .vignette {opacity:0!important;background-image:none!important;}
+            .tmblr-lightbox {background-color:transparent!important;}
+            .tmblr-lightbox img {box-shadow:none!important;border-radius:0!important;padding:4px;background-color:#fff!important;cursor:help;}
+            .tmblr-lightbox a img {border:0px solid #fff!important;}
+        
